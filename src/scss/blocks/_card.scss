@@ -1,0 +1,92 @@
+.card {
+	position: relative;
+	display: grid;
+	gap: 24px;
+	// width: 262px;
+
+	&__pictur {
+		position: relative;
+		background-color: #F3F5F7;
+		text-align: center;
+	}
+
+	&__new {
+		position: absolute;
+		top: 16px;
+		left: 16px;
+
+		padding: 4px 14px;
+		background-color: #FFFFFF;
+
+		color: #121212;
+		text-transform: uppercase;
+		font-weight: bold;
+		font-size: 16px;
+		line-height: 1;
+		border-radius: 4px;
+	}
+
+	&__desc {
+		display: grid;
+		gap: 4px;
+	}
+
+	&__rating {
+		display: flex;
+		align-items: center;
+		gap: 2px;
+	}
+
+	&__title {
+		color: #141718;
+		font-weight: bold;
+		font-size: 16px;
+		line-height: 1.625;
+	}
+
+	&__price {
+		color: #141718;
+		font-weight: bold;
+		font-size: 14px;
+		line-height: 1.571;
+	}
+
+	&__fav {
+		position: absolute;
+		right: 16px;
+		top: 16px;
+
+		z-index: 9;
+	}
+
+	&__btn {
+		position: absolute;
+		bottom: 16px;
+		right: 16px;
+		left: 16px;
+		z-index: 9;
+
+		// display: none;
+		transform: translateY(50%);
+		transition: all 0.3s ease-in-out;
+		opacity: 0;
+		pointer-events: none;
+	}
+
+	&:hover {
+		.card__btn {
+			display: block;
+			transform: translateY(0%);
+			opacity: 1;
+			pointer-events: all;
+		}
+	}
+
+	&__link {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+}

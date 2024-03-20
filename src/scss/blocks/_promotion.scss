@@ -1,0 +1,80 @@
+.promotion {
+	position: relative;
+	background-color: rgb(255, 170, 0, 0.4);
+
+	&::before {
+		content: '';
+		position: absolute;
+		width: 50%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		background-image: url('../../img/promotion/bg.jpg');
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	&__container {
+		padding-left: calc((100% - var(--container-width)) / 2 + var(--container-width) / 2);
+		padding-right: calc((100% - var(--container-width)) / 2);
+	}
+
+	&__content {
+		padding: 100px 0;
+		padding-left: 72px;
+	}
+
+	&__desc {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 16px;
+		max-width: 452px;
+		padding-bottom: 24px;
+	}
+
+	&__tagline {
+		font-size: 16px;
+		color: #377DFF;
+		line-height: 1;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+
+	&__title {
+		font-family: var(--font-accent);
+		font-weight: 500;
+		font-size: 40px;
+		letter-spacing: -0.4px;
+		line-height: 1.1;
+		color: #121212;
+	}
+
+	&__text {
+		font-size: 20px;
+		line-height: 1.6;
+
+	}
+
+	&__timer {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 12px;
+		color: #141718;
+		max-width: 360px;
+		padding-bottom: 24px;
+
+	}
+
+	&__expires {
+		font-size: 16px;
+		line-height: 1.625;
+
+	}
+
+	&__btn {}
+}
+
+.container {}
+
+.btn {}

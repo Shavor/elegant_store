@@ -1,0 +1,55 @@
+.plate {
+	position: relative;
+	background-color: #F3F5F7;
+	padding-bottom: 50%;
+
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+
+	&--01 {
+		background-image: url('../../img/collection/01.jpg');
+	}
+
+	&--02 {
+		background-image: url('../../img/collection/02.jpg');
+	}
+
+	&--03 {
+		background-image: url('../../img/collection/03.jpg');
+	}
+
+	&__title {
+		font-family: var(--font-accent);
+		font-size: 34px;
+		font-weight: 500;
+		line-height: 1.12;
+		letter-spacing: -0.6px;
+	}
+
+	&__tall {
+		grid-row: 1 / 3;
+	}
+
+	&__link {
+		display: inline-flex;
+		align-items: center;
+
+		gap: 4px;
+
+		font-size: 16px;
+		font-weight: 500;
+		line-height: 1.75;
+		letter-spacing: -0.4px;
+		color: #121212;
+		border-bottom: 1px solid black;
+	}
+
+
+	&__content {
+		position: absolute;
+		left: 32px;
+		right: 96;
+		bottom: 40px;
+	}
+}

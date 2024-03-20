@@ -1,0 +1,40 @@
+.tagline {
+	position: relative;
+	padding: 8px 15px;
+	font-family: var(--font-main);
+
+	display: flex;
+	justify-content: center;
+	gap: 15px;
+	align-items: center;
+	background: hsl(195, 9%, 9%);
+	color: #fff;
+
+	&__icon {}
+
+	// .tagline__desc
+
+	&__desc {
+		font-size: 14px;
+		line-height: 22px;
+		font-weight: 600;
+	}
+
+	&__link {
+		color: var(--tagline);
+		font-size: 14px;
+		line-height: 22px;
+		font-weight: 500;
+
+		display: flex;
+		gap: 4px;
+		align-items: center;
+		border-bottom: 1px solid var(--tagline);
+	}
+
+	&__close {
+		position: absolute;
+		right: 16px;
+		top: 10px;
+	}
+}

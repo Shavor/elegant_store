@@ -1,0 +1,61 @@
+.nav {
+	padding: 16px 0;
+	background-color: #FFc95c;
+
+	&__row {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__logo,
+	a.logo {
+		font-size: 24px;
+		font-family: var(--font-accent);
+		font-weight: 500;
+		line-height: 1;
+		color: black;
+	}
+
+	&__list {
+		display: flex;
+		align-items: center;
+		gap: 40px;
+	}
+
+	&__link {
+		display: flex;
+		gap: 2px;
+		align-items: center;
+		color: #141718;
+	}
+
+	&__btns {
+		display: flex;
+		gap: 17px;
+		align-items: center;
+	}
+
+	&__btn {
+		display: flex;
+		align-items: center;
+		gap: 5px;
+	}
+
+	&__btn-count {
+		display: inline-block;
+		width: 20px;
+		height: 20px;
+		background-color: #141718;
+
+		border-radius: 50%;
+		line-height: 20px;
+		text-align: center;
+		font-size: 12px;
+		font-weight: 700;
+		color: var(--tagline);
+	}
+
+}
+
+.logo {}

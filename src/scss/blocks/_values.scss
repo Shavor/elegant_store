@@ -1,0 +1,9 @@
+.values {
+
+
+	&__row {
+		display: grid;
+		gap: 24px;
+		grid-template-columns: repeat(auto-fit, minmax(262px, 1fr));
+	}
+}
